@@ -2,37 +2,41 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: white;
+  background-color: #fff;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   transition: 0.5s;
 `;
+export const Content = styled.div`
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  transition: 0.5s;
+  position: fixed;
+`;
 
 export const Logo = styled.div`
-  position: absolute;
-  width: 123.49px;
-  height: 52px;
-  top: 14px;
+  position: fixed;
+  top: 1px;
+  gap: 15px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   font-size: 30px;
+  transition: 0.25s;
 `;
 
 export const NavBar = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 2px;
-  position: absolute;
-  width: 233px;
-  height: 296px;
-  left: 32px;
-  right: 31px;
-  top: 128px;
+  align-items: center;
+  margin-top: 89px;
 `;
 export const MarketPlace = styled.div`
   background-color: white;
@@ -40,11 +44,13 @@ export const MarketPlace = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
   padding: 16px 20px;
   gap: 10px;
   border-radius: 12px;
   cursor: pointer;
   color: black;
+  transition: 0.25s;
 
   &:hover {
     background-color: #5570f1;
@@ -64,6 +70,7 @@ export const Inventory = styled.div`
   border-radius: 12px;
   cursor: pointer;
   color: black;
+  transition: 0.25s;
 
   &:hover {
     background-color: #5570f1;
@@ -82,7 +89,7 @@ export const Order = styled.div`
   border-radius: 12px;
   cursor: pointer;
   color: black;
-  /* transition: 0.2s; */
+  transition: 0.25s;
 
   &:hover {
     background-color: #5570f1;
@@ -95,8 +102,12 @@ export const LinkRouter = styled(Link)`
 `;
 export const Button = styled.button`
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
   border: 0px solid black;
   cursor: pointer;
   font-size: 40px;
   background-color: #fff;
+  position: fixed;
+  transition: 0.5s;
 `;

@@ -8,7 +8,7 @@ export const Container = styled.div`
   flex-direction: column;
   margin: 3px;
   width: 250px;
-  height: 430px;
+  height: 400px;
   background-color: white;
   border-radius: 2%;
   text-transform: capitalize;
@@ -26,6 +26,11 @@ export const Content = styled.div`
   margin: 5px 0 5px 0;
   font-size: 14px;
 `;
+export const ContentTop = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+`;
 export const ContentTextType = styled.div`
   width: 100px;
   height: 20px;
@@ -39,6 +44,7 @@ export const ContentNameText = styled.div`
   font-weight: bold;
 `;
 export const ContentNumberText = styled.div`
+  font-size: 20px;
   font-weight: bold;
 `;
 export const Stats = styled.div`

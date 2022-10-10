@@ -1,18 +1,14 @@
 import React, { useMemo } from "react";
 import * as S from "./styles";
 
-const TOTALPAGES = 13;
-
 function Pagination({ setCurrentPage }) {
   const pages = useMemo(() => {
     const array = [];
-    for (let i = 0; i < TOTALPAGES; i++) {
+    for (let i = 0; i < 13; i++) {
       array.push(i);
     }
     return array;
   }, []);
-
- 
 
   return (
     <S.Container>

@@ -103,9 +103,15 @@ function PokeCard({ url, name }) {
         )}99`,
       }}
     >
-      <S.ContentNumberText>#{pokemonData.data?.id}</S.ContentNumberText>
-      <S.ContentNameText>{name}</S.ContentNameText>
+      <S.ContentTop>
+        <S.ContentNumberText>#{pokemonData.data?.id}</S.ContentNumberText>
+        <S.ContentNameText>{name}</S.ContentNameText>
+      </S.ContentTop>
       <img
+        style={{
+          width: "85px",
+          height: "85px",
+        }}
         src={pokemonData.data?.sprites?.front_default}
         alt="Img frontal do pokemon"
       />
@@ -198,8 +204,8 @@ function PokeCard({ url, name }) {
             handleCart({
               name: name,
               id: pokemonData.data?.id,
-              img: pokemonData.data?.sprites?.front_default, 
-              price: formatedPrice,
+              img: pokemonData.data?.sprites?.front_default,
+              price: handlePrice,
             })
           }
         >

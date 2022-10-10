@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 25px;
+  height: 37px;
   background-color: #fff;
 `;
 export const Button = styled.button`
@@ -17,7 +17,11 @@ export const Button = styled.button`
 
   &:hover {
     background-color: #5570f1;
-    color: white;
+    color: #FFF;
     transition: 0.25s;
+  }
+  &:focus {
+    background-color: #5570f1;
+    color: #FFF;
   }
 `;
